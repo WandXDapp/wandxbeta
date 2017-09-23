@@ -1,4 +1,4 @@
-# wandxbeta
+# WandX Beta 1.0
 We've released the contracts for the WandX Beta application onto the Ropsten testnet This is our first transaction - https://ropsten.etherscan.io/tx/0xe503f6052179bb81251c759c86495885342450d814ebd655cff622ea3e1958c6
 
 This application enables users to create and trade a portfolio of ERC20 Tokens on Ethereum. We've released sample token contracts on the Ropsten testnet which are called every time a user wants to create a portfolio. The sample contracts are:
