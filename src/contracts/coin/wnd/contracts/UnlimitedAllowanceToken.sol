@@ -1,10 +1,13 @@
 pragma solidity 0.4.15;
+
 import "./StandardToken.sol";
+
 contract UnlimitedAllowanceToken is StandardToken { 
     uint constant MAX_UINT = 2**256 - 1; 
+    
     function transferFrom(address _from, address _to, uint _value)
-        public
-        returns (bool)
+    public
+    returns (bool)
     {
         uint allowance = allowed[_from][msg.sender];
         if (balances[_from] >= _value

@@ -1,10 +1,14 @@
 pragma solidity 0.4.15; 
+
 import "./UnlimitedAllowanceToken.sol"; 
+
 contract WandXToken is UnlimitedAllowanceToken { 
+    
     uint8 constant public decimals = 18;
     uint public totalSupply = 10**27; // 1 billion tokens, 18 decimal places
     string constant public name = "WandX Token";
     string constant public symbol = "WAND"; 
+    
     function WandXToken() {
         balances[msg.sender] = totalSupply;
     }
