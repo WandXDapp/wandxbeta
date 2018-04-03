@@ -1,4 +1,5 @@
 pragma solidity 0.4.15;
+
 contract Token { 
     function totalSupply() constant returns (uint supply) {} 
     function balanceOf(address _owner) constant returns (uint balance) {} 
